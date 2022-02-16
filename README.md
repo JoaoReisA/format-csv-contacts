@@ -6,13 +6,13 @@ To use the script you just need a csv file named 'contacts.csv' in the same fold
 
 INPUT:
 
-NOME,TELEFONE
-Joao,551599999999
-Maria,551191234567
+NOME;TELEFONE\
+Joao;551599999999\
+Maria;551191234567
 
 
 OUTPUT:
 
-Nome,Telefone
-Joao,1599999999
-Maria,1191234567
+Nome;Telefone\
+Joao;1599999999\
+Maria;1191234567
