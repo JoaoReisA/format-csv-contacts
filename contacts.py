@@ -1,10 +1,10 @@
 import csv
 import random
-def csvToMap():
+def csvToMap(filename):
     contacts = {'Nome': [], 'Telefone' : [],}
     newPhones = []
     
-    with open('contacts.csv', 'r') as csv_file:
+    with open(filename, 'r') as csv_file:
         reader = csv.DictReader(csv_file,delimiter=';',fieldnames=["NOME", "TELEFONE"])
         reader.__next__()
         for row in reader:
@@ -33,7 +33,7 @@ def generateNewCsv(map):
         
 
 def main():
-    map =  csvToMap()
+    map =  csvToMap('contacts.csv')
     generateNewCsv(map)
     
 if __name__ == '__main__':
